@@ -18,8 +18,8 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 }
 
 .skip:focus {
-    color: #000;
-    background-color: #e1d8ca;
+    color: #0C0E0A;
+    background-color: #FEF7DA;
     text-decoration: none;
     padding: 0.5%;
     top: auto;
@@ -28,11 +28,21 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
     z-index: 1;
 }
 
+/* Style rules for transparent backgrounds */
+.transparent-white{
+    background-color: rgba(254,247,218,0.75);
+}
+
+.transparent-red{
+    background-color: rgba(81,19,21,0.75);
+}
+
 /* Style rules for body and images */
 body {
-	background-image: url(/images/SD072.jpg);
+    background-image: url(/images/SD072.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: bottom;
 }
 
 img, video {
@@ -60,7 +70,7 @@ img, video {
 /* Style rule for header */
 header {
     top: 0;
-    background-color: #18271b;
+    background-color: #511315;
     height: 190px;
     box-sizing: border-box;
 }
@@ -76,7 +86,7 @@ header img {
 nav {
 	padding: 1%;
     box-sizing: border-box;
-    background-color: #18271b;
+    background-color: #511315;
 }
 
 nav ul {
@@ -96,7 +106,7 @@ nav li:first-child {
 
 nav li a {
     display: block;
-    color: #e1d8ca;
+    color: #FEF7DA;
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -104,7 +114,7 @@ nav li a {
 
 /* Style rules for main content */
 main {
-    background-color: #e1d8ca;
+    background-color: #FEF7DA;
     padding: 2%;
     font-size: 1.15em;
     font-family: 'Roboto Slab', serif;
@@ -121,7 +131,7 @@ main {
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: #FEF7DA;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -158,7 +168,7 @@ article ul {
 }
 
 .tel-link a {
-    color: #e1d8ca;
+    color: #FEF7DA;
     text-decoration: none;
     font-size: 1.5em;
     display: block;
