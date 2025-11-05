@@ -108,10 +108,15 @@ nav li:first-child {
 nav li a {
     display: block;
     color: #FEF7DA;
-    text-align: left;
+    text-align: center;
     padding: .25em;
     text-decoration: none;
 }
+
+nav li a:hover {
+        color: #18271b;
+        background-color: #e1d8ca;
+    }
 
 /* Style rules for main content */
 main {
@@ -126,16 +131,26 @@ main {
   margin-top: 20px;
 }
 
-.card img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.rightcolumn img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: auto;
+}
+
+.small-logo img {
+    max-width: 15em;
+    height: auto;
 }
 
 .frame {
@@ -310,7 +325,7 @@ footer p a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 800px), print {
     
     /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
     
@@ -333,7 +348,6 @@ footer p a {
     nav li {
         border-top: none;
         display: inline-block;
-        border-right: 1px solid #fff;
     }
     
     nav li:last-child {
@@ -341,6 +355,7 @@ footer p a {
     }
     
     nav li a {
+        text-align: left;
         padding: 0.1em 0.75em;
     }
     
@@ -369,6 +384,11 @@ footer p a {
         width: 25%;
         padding-left: 20px;
     }
+    
+    .rightcolumn img {
+    max-width: 100%;
+    height: auto;
+}
     
     .grid {
         display: grid;
@@ -442,11 +462,6 @@ footer p a {
     
     nav li a {
         padding: .5em;
-    }
-    
-    nav li a:hover {
-        color: #18271b;
-        background-color: #e1d8ca;
     }
     
     /* Desktop Viewport: Style rules for main area */
